@@ -25,7 +25,12 @@ function updateTime() {
   let hora = tempo.getHours();
   let minuto = tempo.getMinutes();
   let segundos = tempo.getSeconds();
-
+  if (segundos < 10) {
+    segundos = "0" + segundos;
+  }
+  if (minuto < 10) {
+    minuto = "0" + minuto;
+  }
   document.getElementById("dia").innerText = dia;
   document.getElementById("mes").innerText = mes;
   document.getElementById("ano").innerText = ano;

@@ -25,8 +25,22 @@ body {
   padding: 15px;
   border-radius: 5px;
   border: solid 3px #20a4f3;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
+#relogio:hover {
+  /* Cor de fundo ao passar o mouse */
+  background-color: #20a4f3;
+  /* Sombra ao redor do relógio */
+  box-shadow: 0 0 30px #ba1d0a;
+  /* Cor do texto ao passar o mouse */
+  color: #0e060e;
+  /* Transição suave para mudanças */
+  transition: 1s ease;
+  /* Propriedades que sofrerão a transição */
+  transition-property: color, background, box-shadow;
+}
 #tempo {
   font-size: 60px;
   display: flex;
